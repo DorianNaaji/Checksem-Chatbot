@@ -1,0 +1,33 @@
+/*
+Permet de change le curseur de la souris lorsqu'il
+passe sur un noed : l'utilisateur comprend ainsi qu'il
+peut dérouler le noeud;
+*/
+.node 
+{
+	cursor: pointer;
+}
+
+/* gestion des noeuds */
+.node circle 
+{
+	fill: none;
+	stroke:  #009933;
+	stroke-width: 3px;
+}
+
+/* texte des noeuds
+.node text {
+	font-size:20px;
+}
+/*
+
+/* les liens */
+.link {
+	/* remplissage */
+	fill: none;
+	/* couleur du lien */
+	stroke:#3a526a;
+	/* taille du lien*/
+	stroke-width: 5px;
+}

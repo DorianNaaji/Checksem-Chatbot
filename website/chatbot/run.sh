@@ -1,0 +1,1 @@
+sudo python3.5 -m rasa_nlu.server -c config/config_en.json

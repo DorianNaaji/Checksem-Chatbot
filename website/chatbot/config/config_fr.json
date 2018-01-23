@@ -1,0 +1,8 @@
+{
+  "project": "chatbot_fr",
+  "pipeline": "spacy_sklearn",
+  "port" : 8080,
+  "language": "fr",
+  "path" : "./nlu_data",
+  "data" : "./data/data_fr.json"
+}

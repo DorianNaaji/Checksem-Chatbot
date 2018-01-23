@@ -1,0 +1,117 @@
+
+/*
+  Gestion éléments (top banner)
+*/
+@font-face {
+  font-family: 'Eras Bold ITC';
+  src: url('fonts/ErasITC-Bold.eot');
+  src: url('fonts/ErasITC-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/-Bold.woff2') format('woff2'),
+    url('fonts/ErasITC-Bold.woff') format('woff'),
+    url('fonts/ErasITC-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body
+{
+  background-image:url('../img/fond.jpg');
+  margin: 0px;
+  padding: 0px;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "proxima-nova", "Source Sans Pro", sans-serif;
+  font-size: 1em;
+  letter-spacing: 0.1px;
+  text-rendering: optimizeLegibility;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  -webkit-font-smoothing: antialiased;
+}
+
+header
+{
+  height: 72px;
+  padding: 0px;
+  background : black;
+  margin: 0px;
+  margin-bottom: 2.5%;
+  vertical-align: middle;
+}
+
+table
+{
+  vertical-align: middle;
+}
+
+td a:hover
+{
+  color: #FFFFFF;
+  border-bottom: 2px solid #FFFFFF;
+}
+
+.case1
+{
+  width: 5%;
+}
+
+.case2
+{
+  width: 17%;
+  color: white;
+  font-weight: bold;
+  font-size: 58px;
+  font-family: Eras Bold ITC;
+  vertical-align: middle;
+}
+
+.case3
+{
+  width: 500%;
+  margin-left: 2%;
+}
+
+.case4
+{
+  width: 6%;
+  text-align: center;
+  padding-right: 9px;
+  padding-left: 12px;
+  border-left-style: solid;
+}
+
+.case5
+{
+  width: 6%;
+  text-align: center;
+  padding-right: 12px;
+  padding-left: 12px;
+  border-left-style: solid;
+  border-right-style: solid;
+}
+
+.DLogo
+{
+  width:76px;
+  height:60px;
+  margin-top: 2px;
+}
+
+.DFrance
+{
+  width:96px;
+  height:56px;
+  margin-top: 1px;
+}
+
+.DAnglais
+{
+  width:96px;
+  height:56px;
+  margin-top: 1px;
+}
+
+.text1
+{
+  margin-left: 10%;
+}

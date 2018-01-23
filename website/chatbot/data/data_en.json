@@ -1,0 +1,1463 @@
+{
+  "luis_schema_version": "2.1.0",
+  "versionId": "0.1",
+  "name": "ChatBot",
+  "desc": "PTS3",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "greet_user"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "search_word_definition"
+    },
+    {
+      "name": "search_word_fields"
+    },
+    {
+      "name": "search_word_synonyms"
+    },
+    {
+      "name": "search_word_translation"
+    }
+  ],
+  "entities": [
+    {
+      "name": "greetings"
+    },
+    {
+      "name": "language"
+    },
+    {
+      "name": "word"
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "bing_entities": [],
+  "model_features": [
+    {
+      "name": "greetings",
+      "mode": true,
+      "words": "hello,hi,hey,yeah,greetings,welcome,good day,love,oh,- hey there,good morning,man,good night,peace,- hello there,happiness,well,hello there,good afternoon,- oh,good evening,guys,everybody,- all right,mate,- hi,how are you,- are you alright,how ' s it going,there,how you doing,you all right,- hey,you okay,- is everything all right,- are you all right,- are you okay,- are you ok,- are you feeling all right,- how ya doin ',you ok",
+      "activated": true
+    },
+    {
+      "name": "languages",
+      "mode": true,
+      "words": "italian,spanish,russian,chinese,arabian,french,polish,japanese,mandarin,portuguese,dutch,germa,norwegian,portugese,finnish,slovak",
+      "activated": true
+    }
+  ],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "hi",
+      "intent": "greet_user",
+      "entities": [
+        {
+          "entity": "greetings",
+          "startPos": 0,
+          "endPos": 1
+        }
+      ]
+    },
+    {
+      "text": "what's up",
+      "intent": "greet_user",
+      "entities": []
+    },
+    {
+      "text": "hello !",
+      "intent": "greet_user",
+      "entities": [
+        {
+          "entity": "greetings",
+          "startPos": 0,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "what is a computer",
+      "intent": "search_word_definition",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 10,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "translate car",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 10,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "definition of word",
+      "intent": "search_word_definition",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 14,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "define apple",
+      "intent": "search_word_definition",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 7,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "hello robot",
+      "intent": "greet_user",
+      "entities": [
+        {
+          "entity": "greetings",
+          "startPos": 0,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "what's the meaning of car",
+      "intent": "search_word_definition",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 22,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "tell me what is a car",
+      "intent": "search_word_definition",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 18,
+          "endPos": 20
+        }
+      ]
+    },
+    {
+      "text": "what is a cat",
+      "intent": "search_word_definition",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 10,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "translate word",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 10,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "definition of computer",
+      "intent": "search_word_definition",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 14,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "give me the meaning of keyboard",
+      "intent": "search_word_definition",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 23,
+          "endPos": 30
+        }
+      ]
+    },
+    {
+      "text": "what's an apple ?",
+      "intent": "search_word_definition",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 10,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "what is the definition of a knife ?",
+      "intent": "search_word_definition",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 28,
+          "endPos": 32
+        }
+      ]
+    },
+    {
+      "text": "what's exactly a car ?",
+      "intent": "search_word_definition",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 17,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "give me the definition of apple",
+      "intent": "search_word_definition",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 26,
+          "endPos": 30
+        }
+      ]
+    },
+    {
+      "text": "can i have the meaning of feature ?",
+      "intent": "search_word_definition",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 26,
+          "endPos": 32
+        }
+      ]
+    },
+    {
+      "text": "tell me what is a fruit",
+      "intent": "search_word_definition",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 18,
+          "endPos": 22
+        }
+      ]
+    },
+    {
+      "text": "what are the synonyms of \"computer\" ?",
+      "intent": "search_word_synonyms",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 26,
+          "endPos": 33
+        }
+      ]
+    },
+    {
+      "text": "give me synonyms of the word bottle",
+      "intent": "search_word_synonyms",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 29,
+          "endPos": 34
+        }
+      ]
+    },
+    {
+      "text": "could you tell me other words to say hat ?",
+      "intent": "search_word_synonyms",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 37,
+          "endPos": 39
+        }
+      ]
+    },
+    {
+      "text": "give me other words to say helmet",
+      "intent": "search_word_synonyms",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 27,
+          "endPos": 32
+        }
+      ]
+    },
+    {
+      "text": "synonyms of hello",
+      "intent": "search_word_synonyms",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 12,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "the synonyms of planet",
+      "intent": "search_word_synonyms",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 16,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "in which fields do we use the word fruit",
+      "intent": "search_word_fields",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 35,
+          "endPos": 39
+        }
+      ]
+    },
+    {
+      "text": "domains of blood",
+      "intent": "search_word_fields",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 11,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "in which domains do we say apple",
+      "intent": "search_word_fields",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 27,
+          "endPos": 31
+        }
+      ]
+    },
+    {
+      "text": "apparent words of apple",
+      "intent": "search_word_fields",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 18,
+          "endPos": 22
+        }
+      ]
+    },
+    {
+      "text": "the domains in which we say car",
+      "intent": "search_word_fields",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 28,
+          "endPos": 30
+        }
+      ]
+    },
+    {
+      "text": "what's the translation of apple ?",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 26,
+          "endPos": 30
+        }
+      ]
+    },
+    {
+      "text": "translate apple in french",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "language",
+          "startPos": 19,
+          "endPos": 24
+        },
+        {
+          "entity": "word",
+          "startPos": 10,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "translate me the word knife in any languages",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "language",
+          "startPos": 31,
+          "endPos": 33
+        },
+        {
+          "entity": "language",
+          "startPos": 35,
+          "endPos": 43
+        },
+        {
+          "entity": "word",
+          "startPos": 22,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "give me the word hello in spanish",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "language",
+          "startPos": 26,
+          "endPos": 32
+        },
+        {
+          "entity": "word",
+          "startPos": 17,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "what's a car in russian ?",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "language",
+          "startPos": 16,
+          "endPos": 22
+        },
+        {
+          "entity": "word",
+          "startPos": 9,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "tell me the chinese equivalent for apple",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "language",
+          "startPos": 12,
+          "endPos": 18
+        },
+        {
+          "entity": "word",
+          "startPos": 35,
+          "endPos": 39
+        }
+      ]
+    },
+    {
+      "text": "tell me what is an elephant in italian",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "language",
+          "startPos": 31,
+          "endPos": 37
+        },
+        {
+          "entity": "word",
+          "startPos": 19,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "tell me \"hello\" in arabian",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "language",
+          "startPos": 19,
+          "endPos": 25
+        },
+        {
+          "entity": "word",
+          "startPos": 9,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "what's the french for \"milk\" ?",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "language",
+          "startPos": 11,
+          "endPos": 16
+        },
+        {
+          "entity": "word",
+          "startPos": 23,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "greetings mr the bot",
+      "intent": "greet_user",
+      "entities": [
+        {
+          "entity": "greetings",
+          "startPos": 0,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "what is apple in french, arabian and spanish",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "language",
+          "startPos": 17,
+          "endPos": 22
+        },
+        {
+          "entity": "language",
+          "startPos": 25,
+          "endPos": 31
+        },
+        {
+          "entity": "language",
+          "startPos": 37,
+          "endPos": 43
+        },
+        {
+          "entity": "word",
+          "startPos": 8,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "bread in italian",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "language",
+          "startPos": 9,
+          "endPos": 15
+        },
+        {
+          "entity": "word",
+          "startPos": 0,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "give me car in czech",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "language",
+          "startPos": 15,
+          "endPos": 19
+        },
+        {
+          "entity": "word",
+          "startPos": 8,
+          "endPos": 10
+        }
+      ]
+    },
+    {
+      "text": "what is the word key in turkish and in german ?",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "language",
+          "startPos": 24,
+          "endPos": 30
+        },
+        {
+          "entity": "language",
+          "startPos": 39,
+          "endPos": 44
+        },
+        {
+          "entity": "word",
+          "startPos": 17,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "translate dream in spanish",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "language",
+          "startPos": 19,
+          "endPos": 25
+        },
+        {
+          "entity": "word",
+          "startPos": 10,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "translate wine in french",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "language",
+          "startPos": 18,
+          "endPos": 23
+        },
+        {
+          "entity": "word",
+          "startPos": 10,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "give me car in italian",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "language",
+          "startPos": 15,
+          "endPos": 21
+        },
+        {
+          "entity": "word",
+          "startPos": 8,
+          "endPos": 10
+        }
+      ]
+    },
+    {
+      "text": "translate me phone in japanese",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "language",
+          "startPos": 22,
+          "endPos": 29
+        },
+        {
+          "entity": "word",
+          "startPos": 13,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "give me the word cell in portuguese and dutch",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "language",
+          "startPos": 25,
+          "endPos": 34
+        },
+        {
+          "entity": "language",
+          "startPos": 40,
+          "endPos": 44
+        },
+        {
+          "entity": "word",
+          "startPos": 17,
+          "endPos": 20
+        }
+      ]
+    },
+    {
+      "text": "what is army in polish and chinese ?",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "language",
+          "startPos": 16,
+          "endPos": 21
+        },
+        {
+          "entity": "language",
+          "startPos": 27,
+          "endPos": 33
+        }
+      ]
+    },
+    {
+      "text": "what is an apple in french, arabian and spanish",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "language",
+          "startPos": 20,
+          "endPos": 25
+        },
+        {
+          "entity": "language",
+          "startPos": 28,
+          "endPos": 34
+        },
+        {
+          "entity": "language",
+          "startPos": 40,
+          "endPos": 46
+        },
+        {
+          "entity": "word",
+          "startPos": 11,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "what is a car in portuguese, dutch and german",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "language",
+          "startPos": 17,
+          "endPos": 26
+        },
+        {
+          "entity": "language",
+          "startPos": 29,
+          "endPos": 33
+        },
+        {
+          "entity": "language",
+          "startPos": 39,
+          "endPos": 44
+        },
+        {
+          "entity": "word",
+          "startPos": 10,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "give me the word key in french, chinese and italian",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "language",
+          "startPos": 24,
+          "endPos": 29
+        },
+        {
+          "entity": "language",
+          "startPos": 32,
+          "endPos": 38
+        },
+        {
+          "entity": "language",
+          "startPos": 44,
+          "endPos": 50
+        },
+        {
+          "entity": "word",
+          "startPos": 17,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "could you give me the word weapon in french arabian german",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "language",
+          "startPos": 37,
+          "endPos": 42
+        },
+        {
+          "entity": "language",
+          "startPos": 44,
+          "endPos": 50
+        },
+        {
+          "entity": "language",
+          "startPos": 52,
+          "endPos": 57
+        },
+        {
+          "entity": "word",
+          "startPos": 27,
+          "endPos": 32
+        }
+      ]
+    },
+    {
+      "text": "what is an apple in german",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "language",
+          "startPos": 20,
+          "endPos": 25
+        },
+        {
+          "entity": "word",
+          "startPos": 11,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "give me apple in german",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "language",
+          "startPos": 17,
+          "endPos": 22
+        },
+        {
+          "entity": "word",
+          "startPos": 8,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "translate the word dog in german",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "language",
+          "startPos": 26,
+          "endPos": 31
+        },
+        {
+          "entity": "word",
+          "startPos": 19,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "define me the word car",
+      "intent": "search_word_definition",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 19,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "give definition of knife",
+      "intent": "search_word_definition",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 19,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "give me the definition of body",
+      "intent": "search_word_definition",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 26,
+          "endPos": 29
+        }
+      ]
+    },
+    {
+      "text": "define me fruit",
+      "intent": "search_word_definition",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 10,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "star definition",
+      "intent": "search_word_definition",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 0,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "meaning of internet",
+      "intent": "search_word_definition",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 11,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "definition : apple",
+      "intent": "search_word_definition",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 13,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "translate : apple",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 12,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "translate : apple in french",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "language",
+          "startPos": 21,
+          "endPos": 26
+        },
+        {
+          "entity": "word",
+          "startPos": 12,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "translate : apple in french, japanese and portuguese",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "language",
+          "startPos": 21,
+          "endPos": 26
+        },
+        {
+          "entity": "language",
+          "startPos": 29,
+          "endPos": 36
+        },
+        {
+          "entity": "language",
+          "startPos": 42,
+          "endPos": 51
+        },
+        {
+          "entity": "word",
+          "startPos": 12,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "word fields : war",
+      "intent": "search_word_fields",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 14,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "apparent words : religion",
+      "intent": "search_word_fields",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 17,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "apparent words of science",
+      "intent": "search_word_fields",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 18,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "domains of use of philosophy",
+      "intent": "search_word_fields",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 18,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "domains of philosophy",
+      "intent": "search_word_fields",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 11,
+          "endPos": 20
+        }
+      ]
+    },
+    {
+      "text": "synonyms of word",
+      "intent": "search_word_synonyms",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 12,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "other words to say computer",
+      "intent": "search_word_synonyms",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 19,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "synonyms : apple",
+      "intent": "search_word_synonyms",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 11,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "the synonyms of car",
+      "intent": "search_word_synonyms",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 16,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "translate apple",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 10,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "definition of internet",
+      "intent": "search_word_definition",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 14,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "definition internet",
+      "intent": "search_word_definition",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 11,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "definition of car",
+      "intent": "search_word_definition",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 14,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "translation apple",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 12,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "translation of car",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 15,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "translate me apple",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 13,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "translate me cat",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 13,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "translate me church",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 13,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "define me apple",
+      "intent": "search_word_definition",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 10,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "define me church",
+      "intent": "search_word_definition",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 10,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "define a church",
+      "intent": "search_word_definition",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 9,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "what's the meaning of apple",
+      "intent": "search_word_definition",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 22,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "what is the meaning of application",
+      "intent": "search_word_definition",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 23,
+          "endPos": 33
+        }
+      ]
+    },
+    {
+      "text": "give me the definition of house",
+      "intent": "search_word_definition",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 26,
+          "endPos": 30
+        }
+      ]
+    },
+    {
+      "text": "give me the meaning of corn",
+      "intent": "search_word_definition",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 23,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "what's the french for bread",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "language",
+          "startPos": 11,
+          "endPos": 16
+        },
+        {
+          "entity": "word",
+          "startPos": 22,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "what's the polish for apple",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "language",
+          "startPos": 11,
+          "endPos": 16
+        },
+        {
+          "entity": "word",
+          "startPos": 22,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "what are the translations of car",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 29,
+          "endPos": 31
+        }
+      ]
+    },
+    {
+      "text": "what are the translations of an apple",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 32,
+          "endPos": 36
+        }
+      ]
+    },
+    {
+      "text": "what's the arabian and polish for peace",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "language",
+          "startPos": 11,
+          "endPos": 17
+        },
+        {
+          "entity": "language",
+          "startPos": 23,
+          "endPos": 28
+        },
+        {
+          "entity": "word",
+          "startPos": 34,
+          "endPos": 38
+        }
+      ]
+    },
+    {
+      "text": "give me the translations of coffee",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 28,
+          "endPos": 33
+        }
+      ]
+    },
+    {
+      "text": "translations of school",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 16,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "translate school",
+      "intent": "search_word_translation",
+      "entities": []
+    },
+    {
+      "text": "different translations of keyboard",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 26,
+          "endPos": 33
+        }
+      ]
+    },
+    {
+      "text": "translation of apple in french and arabian",
+      "intent": "search_word_translation",
+      "entities": [
+        {
+          "entity": "language",
+          "startPos": 24,
+          "endPos": 29
+        },
+        {
+          "entity": "language",
+          "startPos": 35,
+          "endPos": 41
+        },
+        {
+          "entity": "word",
+          "startPos": 15,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "give me the related words of coffee",
+      "intent": "search_word_fields",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 29,
+          "endPos": 34
+        }
+      ]
+    },
+    {
+      "text": "related words of car",
+      "intent": "search_word_fields",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 17,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "different way to say apple",
+      "intent": "search_word_synonyms",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 21,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "give me a different way to say car",
+      "intent": "search_word_synonyms",
+      "entities": [
+        {
+          "entity": "word",
+          "startPos": 31,
+          "endPos": 33
+        }
+      ]
+    }
+  ]
+}

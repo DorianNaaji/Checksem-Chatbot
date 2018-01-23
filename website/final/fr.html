@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang = "fr">
+<head>
+  <title> 
+    CheckBot
+  </title>
+  <!-- favicon  -->
+  <link rel="icon" href="img/checkbot.gif">
+  <meta charset="UTF-8">
+  <!-- some fonts  -->
+  <link href="css/fonts.css" rel="stylesheet" type="text/css">
+  <script>
+    try
+    {
+      Typekit.load(
+        { async: true 
+        });
+    }
+    catch(e)
+    {
+    }
+  </script>
+  <!-- The different scripts and stylesheets  -->
+
+
+  <!-- d3.js  -->
+  <script src="js/libraries/d3.min.js"></script>  
+  <!-- jQuery  -->
+  <script src="js/libraries/jquery224.min.js"></script>
+  <!-- css for chat frame  -->
+  <link rel="stylesheet" href="css/chat.css">
+  <link rel="stylesheet prefetch" href="css/reset.min.css">
+  <!-- global css (top banner and background)  -->
+  <link rel="stylesheet" href="css/style.css"/>
+  <!-- css for d3.js tree svg  -->
+  <link rel="stylesheet" href="css/d3tree.css">
+  <!-- css for tables  -->
+  <link rel="stylesheet" href="css/tables.css">
+  
+</head>
+
+<body>
+
+  <!-- the top banner  -->
+  <header>
+    <table>
+      <tr class="case">
+        <td class="case1">
+          <a href="https://checksem.u-bourgogne.fr/#/home">
+            <!-- The Checksem gif  -->
+            <img src="img/checkbot.gif" class ="DLogo" alt="logo" title="Checkbot" />
+          </a>
+        </td>
+        <td class="case2">
+          CHATBOT
+        </td>
+        <td class="case3">
+        </td>
+        <td class="case4">
+          <a href="fr.html">
+            <!-- language choice : french  -->
+            <img src="img/DrapFrance.png" class ="DFrance" alt="DrapFR" title="Français" />
+          </a>
+        </td>
+        <td class="case5">
+          <a href="en.html">
+            <!-- language choice : english  -->
+            <img src="img/DrapAnglaisAmericain.png" class ="DAnglais" alt="DrapAA" title="Anglais" />
+          </a>
+        </td>
+      </tr>
+    </table>
+  </header>
+
+  <!-- the chat frame  -->
+  <div id="frame">
+    <!-- content of the chat frame  -->
+  	<div class="content">
+      <!-- top banner of the chat frame  -->
+  		<div class="contact-profile">
+        <!-- Image for the bot  -->
+  			<img src="img/chatbot.png" alt="" />
+  			<p>
+          Agent conversationnel
+        </p>
+  		</div>
+      <!-- div containing the messages -->
+  		<div class="messages" id="theMess">
+        <!-- script managing the queries to dbpedia and their callbacks + the API (rasa) requests  -->
+        <script type="text/javascript" src="js/lib.fr.js"></script>
+        <!-- <ul> containing the messages : <li class="replies"> for the user and <li class="sent"> for the bot -->
+  			<ul id="mess">
+          <li class="sent">
+            <img src="img/chatbot.png" alt="">
+            <p>
+              Je suis un agent conversationnel. Vous pouvez me demander les définitions d'un mot ainsi que ses traductions. Je connais 19 languages ! (Allemand, Anglais, Japonais, Arabe, Espagnol, Italien, Néerlandais, Polonais, Portugais, Russe, Chinois, Coréen, Catalan, Basque, Bulgare, Indonésien, Turc, Tchèque et Hongrois). Malheureusement je ne pourrai pas vous donner les synonymes d'un mot en français. Essayez en Anglais !
+            </p>
+          </li>
+          <!-- beforeend -->
+  			</ul>
+  		</div>
+      <!-- div containing stuff to send messages : button and textbox -->
+  		<div class="message-input">
+  			<div class="wrap">
+  			<input type="text" id="txt-srch" placeholder="Entrez votre message..."  />
+  			<button id="btn-ok">
+          <img src="img/send.png" alt="send" width="12" height="12"/>
+        </button>
+  			</div>
+  		</div>
+  	</div>
+  </div>
+  <!-- jquery script managing the messages (append messages from user)  -->
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

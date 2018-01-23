@@ -1,0 +1,669 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "Quelle est la d\u00e9finition de pomme ?",
+        "intent": "recherche_definition",
+        "entities": [
+          {
+            "start": 28,
+            "value": "pomme",
+            "entity": "mot",
+            "end": 33
+          }
+        ]
+      },
+      {
+        "text": "D\u00e9finition d'automobile",
+        "intent": "recherche_definition",
+        "entities": [
+          {
+            "start": 13,
+            "value": "automobile",
+            "entity": "mot",
+            "end": 23
+          }
+        ]
+      },
+      {
+        "text": "Donne-moi la d\u00e9finition d'un atome",
+        "intent": "recherche_definition",
+        "entities": [
+          {
+            "start": 29,
+            "value": "atome",
+            "entity": "mot",
+            "end": 34
+          }
+        ]
+      },
+      {
+        "text": "d\u00e9finis-moi la pluie",
+        "intent": "recherche_definition",
+        "entities": [
+          {
+            "start": 15,
+            "value": "pluie",
+            "entity": "mot",
+            "end": 20
+          }
+        ]
+      },
+      {
+        "text": "qu'est-ce que l'individualisme ?",
+        "intent": "recherche_definition",
+        "entities": [
+          {
+            "start": 16,
+            "value": "individualisme",
+            "entity": "mot",
+            "end": 30
+          }
+        ]
+      },
+      {
+        "text": "c'est quoi une automobile ?",
+        "intent": "recherche_definition",
+        "entities": [
+          {
+            "start": 15,
+            "value": "automobile",
+            "entity": "mot",
+            "end": 25
+          }
+        ]
+      },
+      {
+        "text": "d\u00e9finition du temps",
+        "intent": "recherche_definition",
+        "entities": [
+          {
+            "start": 14,
+            "value": "temps",
+            "entity": "mot",
+            "end": 19
+          }
+        ]
+      },
+      {
+        "text": "signification de l'homme",
+        "intent": "recherche_definition",
+        "entities": [
+          {
+            "start": 19,
+            "value": "homme",
+            "entity": "mot",
+            "end": 24
+          }
+        ]
+      },
+      {
+        "text": "pourrais-je avoir la signification du mot fusil ?",
+        "intent": "recherche_definition",
+        "entities": [
+          {
+            "start": 42,
+            "value": "fusil",
+            "entity": "mot",
+            "end": 47
+          }
+        ]
+      },
+      {
+        "text": "que veut dire pomme",
+        "intent": "recherche_definition",
+        "entities": [
+          {
+            "start": 14,
+            "value": "pomme",
+            "entity": "mot",
+            "end": 19
+          }
+        ]
+      },
+      {
+        "text": "que veut dire le mot religion",
+        "intent": "recherche_definition",
+        "entities": [
+          {
+            "start": 21,
+            "value": "religion",
+            "entity": "mot",
+            "end": 30
+          }
+        ]
+      },
+      {
+        "text": "qu'est-ce qu'un organe",
+        "intent": "recherche_definition",
+        "entities": [
+          {
+            "start": 16,
+            "value": "organe",
+            "entity": "mot",
+            "end": 22
+          }
+        ]
+      },
+      {
+        "text": "Qu'est-ce qu'une notion",
+        "intent": "recherche_definition",
+        "entities": [
+          {
+            "start": 17,
+            "value": "notion",
+            "entity": "mot",
+            "end": 23
+          }
+        ]
+      },
+      {
+        "text": "signification de sang",
+        "intent": "recherche_definition",
+        "entities": [
+          {
+            "start": 17,
+            "value": "sang",
+            "entity": "mot",
+            "end": 21
+          }
+        ]
+      },
+      {
+        "text": "Quelle est la traduction de pomme ?",
+        "intent": "recherche_traduction",
+        "entities": [
+          {
+            "start": 28,
+            "value": "pomme",
+            "entity": "mot",
+            "end": 33
+          }
+        ]
+      },
+      {
+        "text": "Traduction de religion",
+        "intent": "recherche_traduction",
+        "entities": [
+          {
+            "start": 14,
+            "value": "religion",
+            "entity": "mot",
+            "end": 22
+          }
+        ]
+      },
+      {
+        "text": "Traduis-moi pluie",
+        "intent": "recherche_traduction",
+        "entities": [
+          {
+            "start": 12,
+            "value": "pluie",
+            "entity": "mot",
+            "end": 17
+          }
+        ]
+      },
+      {
+        "text": "Traduction automobile",
+        "intent": "recherche_traduction",
+        "entities": [
+          {
+            "start": 11,
+            "value": "automobile",
+            "entity": "mot",
+            "end": 21
+          }
+        ]
+      },
+      {
+        "text": "Traduction de route en chinois",
+        "intent": "recherche_traduction",
+        "entities": [
+          {
+            "start": 23,
+            "value": "chinois",
+            "entity": "langue",
+            "end": 30
+          },
+          {
+            "start": 14,
+            "value": "route",
+            "entity": "mot",
+            "end": 19
+          }
+        ]
+      },
+      {
+        "text": "Traduis-moi poulet en anglais, en italien et en allemand",
+        "intent": "recherche_traduction",
+        "entities": [
+          {
+            "start": 12,
+            "value": "poulet",
+            "entity": "mot",
+            "end": 18
+          },
+          {
+            "start": 22,
+            "value": "anglais",
+            "entity": "langue",
+            "end": 29
+          },
+          {
+            "start": 34,
+            "value": "italien",
+            "entity": "langue",
+            "end": 41
+          },
+          {
+            "start": 48,
+            "value": "allemand",
+            "entity": "langue",
+            "end": 56
+          }
+        ]
+      },
+      {
+        "text": "Traduis organe en cor\u00e9en, catalan, hongrois et basque",
+        "intent": "recherche_traduction",
+        "entities": [
+          {
+            "start": 18,
+            "value": "cor\u00e9en",
+            "entity": "langue",
+            "end": 24
+          },
+          {
+            "start": 8,
+            "value": "organe",
+            "entity": "mot",
+            "end": 14
+          },
+          {
+            "start": 26,
+            "value": "catalan",
+            "entity": "langue",
+            "end": 33
+          },
+          {
+            "start": 35,
+            "value": "hongrois",
+            "entity": "langue",
+            "end": 43
+          },
+          {
+            "start": 47,
+            "value": "basque",
+            "entity": "langue",
+            "end": 53
+          }
+        ]
+      },
+      {
+        "text": "Traduction d'automobile en bulgare",
+        "intent": "recherche_traduction",
+        "entities": [
+          {
+            "start": 13,
+            "value": "automobile",
+            "entity": "mot",
+            "end": 23
+          },
+          {
+            "start": 27,
+            "value": "bulgare",
+            "entity": "langue",
+            "end": 34
+          }
+        ]
+      },
+      {
+        "text": "Donne-moi la traduction de chien en anglais et en russe",
+        "intent": "recherche_traduction",
+        "entities": [
+          {
+            "start": 27,
+            "value": "chien",
+            "entity": "mot",
+            "end": 32
+          },
+          {
+            "start": 36,
+            "value": "anglais",
+            "entity": "langue",
+            "end": 43
+          },
+          {
+            "start": 50,
+            "value": "russe",
+            "entity": "langue",
+            "end": 55
+          }
+        ]
+      },
+      {
+        "text": "Donne-moi le mot chat en indon\u00e9sien et en chinois",
+        "intent": "recherche_traduction",
+        "entities": [
+          {
+            "start": 17,
+            "value": "chat",
+            "entity": "mot",
+            "end": 21
+          },
+          {
+            "start": 25,
+            "value": "indon\u00e9sien",
+            "entity": "langue",
+            "end": 35
+          },
+          {
+            "start": 42,
+            "value": "chinois",
+            "entity": "langue",
+            "end": 49
+          }
+        ]
+      },
+      {
+        "text": "Traduis chiot en italien",
+        "intent": "recherche_traduction",
+        "entities": [
+          {
+            "start": 8,
+            "value": "chiot",
+            "entity": "mot",
+            "end": 13
+          },
+          {
+            "start": 17,
+            "value": "italien",
+            "entity": "langue",
+            "end": 24
+          }
+        ]
+      },
+      {
+        "text": "Traduction de clavier en polonais, n\u00e9erlandais et japonais",
+        "intent": "recherche_traduction",
+        "entities": [
+          {
+            "start": 14,
+            "value": "clavier",
+            "entity": "mot",
+            "end": 21
+          },
+          {
+            "start": 25,
+            "value": "polonais",
+            "entity": "langue",
+            "end": 33
+          },
+          {
+            "start": 35,
+            "value": "n\u00e9erlandais",
+            "entity": "langue",
+            "end": 46
+          },
+          {
+            "start": 50,
+            "value": "japonais",
+            "entity": "langue",
+            "end": 58
+          }
+        ]
+      },
+      {
+        "text": "traduis bateau en japonais, italien et espagnol",
+        "intent": "recherche_traduction",
+        "entities": [
+          {
+            "start": 18,
+            "value": "japonais",
+            "entity": "langue",
+            "end": 26
+          },
+          {
+            "start": 28,
+            "value": "italien",
+            "entity": "langue",
+            "end": 35
+          },
+          {
+            "start": 39,
+            "value": "espagnol",
+            "entity": "langue",
+            "end": 47
+          },
+          {
+            "start": 8,
+            "value": "bateau",
+            "entity": "mot",
+            "end": 14
+          }
+        ]
+      },
+      {
+        "text": "Traduis montagne en arabe, en turc et en tch\u00e8que",
+        "intent": "recherche_traduction",
+        "entities": [
+          {
+            "start": 8,
+            "value": "montagne",
+            "entity": "mot",
+            "end": 16
+          },
+          {
+            "start": 20,
+            "value": "arabe",
+            "entity": "langue",
+            "end": 25
+          },
+          {
+            "start": 30,
+            "value": "turc",
+            "entity": "langue",
+            "end": 34
+          },
+          {
+            "start": 41,
+            "value": "tch\u00e8que",
+            "entity": "langue",
+            "end": 48
+          }
+        ]
+      },
+      {
+        "text": "Comment se dit chat en italien et en espagnol",
+        "intent": "recherche_traduction",
+        "entities": [
+          {
+            "start": 23,
+            "value": "italien",
+            "entity": "langue",
+            "end": 30
+          },
+          {
+            "start": 37,
+            "value": "espagnol",
+            "entity": "langue",
+            "end": 45
+          },
+          {
+            "start": 15,
+            "value": "chat",
+            "entity": "mot",
+            "end": 19
+          }
+        ]
+      },
+      {
+        "text": "Donne-moi les synonymes du mot abeille",
+        "intent": "recherche_synonymes",
+        "entities": [
+          {
+            "start": 31,
+            "value": "abeille",
+            "entity": "mot",
+            "end": 38
+          }
+        ]
+      },
+      {
+        "text": "Synonymes de fleur",
+        "intent": "recherche_synonymes",
+        "entities": [
+          {
+            "start": 13,
+            "value": "fleur",
+            "entity": "mot",
+            "end": 18
+          }
+        ]
+      },
+      {
+        "text": "Donne-moi une autre mani\u00e8re de dire automobile",
+        "intent": "recherche_synonymes",
+        "entities": [
+          {
+            "start": 36,
+            "value": "automobile",
+            "entity": "mot",
+            "end": 46
+          }
+        ]
+      },
+      {
+        "text": "Les synonymes de canon",
+        "intent": "recherche_synonymes",
+        "entities": [
+          {
+            "start": 17,
+            "value": "canon",
+            "entity": "mot",
+            "end": 22
+          }
+        ]
+      },
+      {
+        "text": "Les mots apparent\u00e9s d'habit",
+        "intent": "recherche_mots_apparent\u00e9s",
+        "entities": [
+          {
+            "start": 22,
+            "value": "habit",
+            "entity": "mot",
+            "end": 27
+          }
+        ]
+      },
+      {
+        "text": "Les domaines du mot fleur",
+        "intent": "recherche_mots_apparent\u00e9s",
+        "entities": [
+          {
+            "start": 20,
+            "value": "fleur",
+            "entity": "mot",
+            "end": 25
+          }
+        ]
+      },
+      {
+        "text": "Domaines de l'astrologie",
+        "intent": "recherche_mots_apparent\u00e9s",
+        "entities": [
+          {
+            "start": 14,
+            "value": "astrologie",
+            "entity": "mot",
+            "end": 24
+          }
+        ]
+      },
+      {
+        "text": "Mots relatifs \u00e0 religion",
+        "intent": "recherche_mots_apparent\u00e9s",
+        "entities": [
+          {
+            "start": 16,
+            "value": "religion",
+            "entity": "mot",
+            "end": 24
+          }
+        ]
+      },
+      {
+        "text": "Donne-moi les mots apparent\u00e9s \u00e0 voiture",
+        "intent": "recherche_mots_apparent\u00e9s",
+        "entities": [
+          {
+            "start": 32,
+            "value": "voiture",
+            "entity": "mot",
+            "end": 39
+          }
+        ]
+      },
+      {
+        "text": "Les mots apparent\u00e9s de chasuble",
+        "intent": "recherche_mots_apparent\u00e9s",
+        "entities": [
+          {
+            "start": 23,
+            "value": "chasuble",
+            "entity": "mot",
+            "end": 31
+          }
+        ]
+      },
+      {
+        "text": "Salut",
+        "intent": "saluer_utilisateur",
+        "entities": []
+      },
+      {
+        "text": "hey",
+        "intent": "saluer_utilisateur",
+        "entities": []
+      },
+      {
+        "text": "hello",
+        "intent": "saluer_utilisateur",
+        "entities": []
+      },
+      {
+        "text": "Bonjour",
+        "intent": "saluer_utilisateur",
+        "entities": []
+      },
+      {
+        "text": "bien le bonjour",
+        "intent": "saluer_utilisateur",
+        "entities": []
+      },
+      {
+        "text": "arbre en polonais",
+        "intent": "recherche_traduction",
+        "entities": [
+          {
+            "start": 0,
+            "value": "arbre",
+            "entity": "mot",
+            "end": 5
+          },
+          {
+            "start": 9,
+            "value": "polonais",
+            "entity": "langue",
+            "end": 17
+          }
+        ]
+      }
+    ],
+    "entity_synonyms": [],
+    "regex_features": []
+  }
+}
