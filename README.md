@@ -6,3 +6,7 @@ Building a chatbot from scratch thanks to RASA NLU. Most consequent project @Ins
 
 + NGINX
 + RASA NLU
+
+# documentation
+
+See the others .md files to learn more about the project / how it works
