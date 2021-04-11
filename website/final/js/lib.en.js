@@ -1,4 +1,4 @@
-﻿var lastIntent = null;
+var lastIntent = null;
 
 /*
  * called after the complete loading of the page
