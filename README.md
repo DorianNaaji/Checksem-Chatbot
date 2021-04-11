@@ -13,7 +13,7 @@ The purpose was to build a smart bot that would be able to answer to specific qu
 With not much experience in Software Development / Engineering, my team and I still did a great job for beginners. It was a nice experience to build a chatbot from scratch.
 Nevertheless, the actual code is not really usable at it is, and is a bit spaghetti. If you need any help at setting up a chatbot, I'm sure there's nice websites and tutorials over the web.
 
-# Showcase
+# Showcase
 
 
 ![img-1](doc/def-apple.png)
