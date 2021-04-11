@@ -165,13 +165,21 @@ function sparqlQueryJson(queryStr, endpoint, callback, isDebug)
 */
 
 
+/* update 11/04/2021
+   code is pretty old now and some huges changes should be done but well ;
+   the SPARQL url request changed, so it had to be updated for each of the bellow functions.
+   a global const var would be better but I don't wanna break anything since the code is quite old.
+   var endpoint = "http://dbpedia.org/sparql"; -> var endpoint = "https://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&";
+*/
+
+
 /*
  * SPARQL request  to obtain a given word's definition
  */
 function querySparqlDefinition(word)
 {
     var mot = capitalizeFirstLetter(word);
-    var endpoint = "http://fr.dbpedia.org/sparql";
+    var endpoint = "https://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&";
     var query = "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://fr.dbpedia.org/resource/> SELECT ?def WHERE { res:" + mot + " dbo:abstract ?def . FILTER (lang(?def) = 'fr') }";
     sparqlQueryJson(query, endpoint, callbackDefinition, true);
 }
@@ -182,7 +190,7 @@ function querySparqlDefinition(word)
 function querySparqlAllTranslations(word) 
 {
     var mot = capitalizeFirstLetter(word);
-    var endpoint = "http://fr.dbpedia.org/sparql";
+    var endpoint = "https://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&";
     var query = "PREFIX res: <http://fr.dbpedia.org/resource/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> SELECT ?trad (lang(?trad) as ?lang) WHERE { res:" + mot + " rdfs:label ?trad }";
     sparqlQueryJson(query, endpoint, callbackTranslation, true);
 }
@@ -199,7 +207,7 @@ function querySparqlTranslations(word, languages)
         languagesTag[i] = languageStrToLanguageTag(languages[i]);
     }
     var mot = capitalizeFirstLetter(word);
-    var endpoint = "http://fr.dbpedia.org/sparql";
+    var endpoint = "https://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&";
     if (languagesTag.length == 1)
     {
 
